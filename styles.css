@@ -10,6 +10,7 @@ body {
     overflow: hidden;
     flex-direction: column;
     text-align: center;
+    padding: 20px;
 }
 
 /* Estilo para el mensaje de bienvenida */
@@ -21,25 +22,31 @@ body {
 }
 
 #welcome-section h1 {
-    font-size: 2em;
+    font-size: 3em;  /* Hicimos el título más grande */
     color: #fff;
     margin-bottom: 20px;
+    font-weight: bold; /* Fuente más gruesa */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Borde negro con sombra */
 }
 
+/* Estilo para el botón */
 button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background-color: #87ceeb;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border: none;
+    border: 3px solid #000; /* Borde negro alrededor del botón */
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px;
+    transition: all 0.3s ease; /* Añadido para animar los cambios */
 }
 
 button:hover {
     background-color: #00bfff;
+    border-color: #fff; /* Cambia el borde a blanco cuando el botón se pasa el ratón por encima */
 }
+
 
 /* Estilo para las secciones de preguntas */
 #password-section, #content-section, #nickname-section {
@@ -47,7 +54,8 @@ button:hover {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 100%;
+    max-width: 350px; /* Añadido para que no crezca demasiado en pantallas grandes */
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -55,9 +63,34 @@ button:hover {
 /* Estilo para los selects, inputs y botones */
 select, input, button {
     margin-top: 10px;
-    padding: 8px;
+    padding: 10px;
     width: 100%;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #welcome-section h1 {
+        font-size: 2.5em; /* Ajuste para que el texto no se vea muy grande */
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #password-section, #content-section, #nickname-section {
+        width: 100%;
+        max-width: 300px; /* Más ajustado para pantallas más pequeñas */
+    }
+
+    select, input, button {
+        padding: 12px;
+        font-size: 14px; /* Texto más pequeño para móviles */
+    }
 }
