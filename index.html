@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Portada -->
+    <div id="welcome-section">
+        <h1>Con mucho cariño para ti</h1>
+        <button id="open-button" onclick="openPage()">Abrir</button>
+    </div>
+
+    <!-- Sección de la contraseña -->
+    <div id="password-section" style="display: none;">
+        <h2>Selecciona el mes en que empezamos a hablar:</h2>
+        <select id="month-input">
+            <option value="">Selecciona el mes</option>
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <button onclick="checkPassword()">Entrar</button>
+    </div>
+
+    <!-- Sección del primer acertijo -->
+    <div id="content-section" style="display: none;">
+        <h2>Acertijo 1</h2>
+        <p>¿Dónde fue la primera vez que nos tomamos de la mano?</p>
+        <select id="place-input">
+            <option value="">Selecciona el lugar</option>
+            <option value="parque">Parque</option>
+            <option value="cine">Cine</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="playa">Colegio</option>
+        </select>
+        <button onclick="checkPlace()">Verificar</button>
+    </div>
+
+    <!-- Sección del segundo acertijo -->
+    <div id="nickname-section" style="display: none;">
+        <h2>Acertijo 2</h2>
+        <p>¿Cuál fue el primer apodo por el cual te llamé?</p>
+        <select id="nickname-input">
+            <option value="">Selecciona el apodo</option>
+            <option value="granizo">Granizo ❄️</option>
+            <option value="terquita">Terquita</option>
+            <option value="sec">Doña Secsosa</option>
+        </select>
+        <button onclick="checkNickname()">Verificar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
