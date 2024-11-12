@@ -9,8 +9,8 @@
 <body>
     <!-- Portada -->
     <div id="welcome-section">
-        <h1>Con mucho cariño para ti</h1>
-        <button id="open-button" onclick="openPage()">Abrir</button>
+        <h1>No es mucho, pero con esto al final de que se acaben las clases tendrás algo mío que nunca se eliminará</h1>
+        <button id="open-button" onclick="openPage()">COMENZAR</button>
     </div>
 
     <!-- Sección de la contraseña -->
@@ -36,7 +36,7 @@
 
     <!-- Sección del primer acertijo -->
     <div id="content-section" style="display: none;">
-        <h2>Acertijo 1</h2>
+        <h2>Pregunta Número 1</h2>
         <p>¿Dónde fue la primera vez que nos tomamos de la mano?</p>
         <select id="place-input">
             <option value="">Selecciona el lugar</option>
@@ -50,7 +50,7 @@
 
     <!-- Sección del segundo acertijo -->
     <div id="nickname-section" style="display: none;">
-        <h2>Acertijo 2</h2>
+        <h2>Pregunta Número 2</h2>
         <p>¿Cuál fue el primer apodo por el cual te llamé?</p>
         <select id="nickname-input">
             <option value="">Selecciona el apodo</option>
@@ -60,6 +60,29 @@
         </select>
         <button onclick="checkNickname()">Verificar</button>
     </div>
+
+    <!-- Sección del tercer acertijo -->
+    <div id="third-section" style="display: none;">
+        <h2>Pregunta Número 3</h2>
+        <p>¿Qué apodo tenía tu primo cada que iba y estaba él?</p>
+        <select id="primo-nickname-input">
+            <option value="">Selecciona el apodo</option>
+            <option value="dani">Dani</option>
+            <option value="albondiga">Albóndiga</option>
+            <option value="bicho">Bicho</option>
+        </select>
+        <button onclick="checkPrimoNickname()">Verificar</button>
+    </div>
+
+    <!-- Sección del video final -->
+<div id="video-section" style="display: none;">
+    <h2>te quiero demasiado</h2>
+    <p>Espero que te haya gustado:</p>
+    <video controls width="100%">
+        <source src="VID-ljrymtnu.mp4" type="video/mp4">
+        Tu navegador no soporta este video.
+    </video>
+</div>
 
     <script src="script.js"></script>
 </body>
