@@ -6,12 +6,13 @@ function checkPassword() {
     if (monthInput === correctMonth) {
         document.getElementById('password-section').style.display = 'none';
         document.getElementById('content-section').style.display = 'block';
+        alert("Tienes una muy buena memoria kitirin! 💖");
     } else {
         alert("Dios mío, qué tristeza. A ver, otro intento :c.");
     }
 }
 
-// Función para verificar la respuesta del lugar
+// Función para verificar la respuesta del primer acertijo (lugar)
 function checkPlace() {
     const placeInput = document.getElementById('place-input').value;
     const correctPlace = "cine"; // Respuesta correcta
@@ -25,15 +26,31 @@ function checkPlace() {
     }
 }
 
-// Función para verificar la respuesta del apodo
+// Función para verificar la respuesta del segundo acertijo (primer apodo)
 function checkNickname() {
     const nicknameInput = document.getElementById('nickname-input').value;
     const correctNickname = "granizo"; // Respuesta correcta
 
     if (nicknameInput === correctNickname) {
+        document.getElementById('nickname-section').style.display = 'none';
+        document.getElementById('third-section').style.display = 'block';
         alert("¡Exacto! Qué bonito recordar todo esto 💖");
     } else {
         alert("¡Ups! Intenta de nuevo.");
+    }
+}
+
+// Función para verificar la respuesta del tercer acertijo (apodo del primo)
+function checkPrimoNickname() {
+    const primoNicknameInput = document.getElementById('primo-nickname-input').value;
+    const correctPrimoNickname = "bicho"; // Respuesta correcta
+
+    if (primoNicknameInput === correctPrimoNickname) {
+        document.getElementById('third-section').style.display = 'none';
+        document.getElementById('video-section').style.display = 'block'; // Muestra la sección del video
+        alert("Bieeen, haciendo esta pregunta se me vinieron muchas cosas a la mente 🥰");
+    } else {
+        alert("Ayyy es en serio? ¡Intenta otra vez!");
     }
 }
 
