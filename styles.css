@@ -49,7 +49,7 @@ button:hover {
 
 
 /* Estilo para las secciones de preguntas */
-#password-section, #content-section, #nickname-section {
+#password-section, #content-section, #nickname-section, #third-section {
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,6 +68,17 @@ select, input, button {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#video-section {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 /* Media Query para pantallas más pequeñas (móviles) */
