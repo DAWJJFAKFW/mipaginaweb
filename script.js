@@ -47,6 +47,20 @@ function checkPrimoNickname() {
 
     if (primoNicknameInput === correctPrimoNickname) {
         document.getElementById('third-section').style.display = 'none';
+        document.getElementById('four-section').style.display = 'block';
+        alert("¡Qué recuerdos de verdad! 💖");
+    } else {
+        alert("¡Ups! Intenta de nuevo.");
+    }
+}
+
+// Función para verificar la respuesta del cuarto acertijo (mascota favorita)
+function checkMascotaNickname() {
+    const mascotaNicknameInput = document.getElementById('mascota-nickname-input').value;
+    const correctMascotaNickname = "todas"; // Respuesta correcta
+
+    if (mascotaNicknameInput === correctMascotaNickname) {
+        document.getElementById('four-section').style.display = 'none';
         document.getElementById('video-section').style.display = 'block'; // Muestra la sección del video
         alert("Bieeen, haciendo esta pregunta se me vinieron muchas cosas a la mente 🥰");
     } else {
