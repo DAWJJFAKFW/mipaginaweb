@@ -1,4 +1,4 @@
-/* Configuración general */
+/* Fondo general */
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-/* Estilo para el mensaje de bienvenida */
+/* Sección de bienvenida */
 #welcome-section {
     display: flex;
     flex-direction: column;
@@ -22,86 +22,84 @@ body {
 }
 
 #welcome-section h1 {
-    font-size: 3em;  /* Hicimos el título más grande */
+    font-size: 3em;
     color: #fff;
     margin-bottom: 20px;
-    font-weight: bold; /* Fuente más gruesa */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Borde negro con sombra */
-}
-
-/* Estilo para el botón */
-button {
-    padding: 12px 24px;
-    background-color: #87ceeb;
-    color: white;
     font-weight: bold;
-    cursor: pointer;
-    border: 3px solid #000; /* Borde negro alrededor del botón */
-    border-radius: 5px;
-    font-size: 18px;
-    transition: all 0.3s ease; /* Añadido para animar los cambios */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
-button:hover {
-    background-color: #00bfff;
-    border-color: #fff; /* Cambia el borde a blanco cuando el botón se pasa el ratón por encima */
-}
-
-
-/* Estilo para las secciones de preguntas */
-#password-section, #content-section, #nickname-section, #third-section {
-    background: #fff;
+/* Secciones de preguntas */
+#password-section, #content-section, #nickname-section, #third-section, #four-section, #video-section {
+    background: #ffffff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 350px; /* Añadido para que no crezca demasiado en pantallas grandes */
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Estilo para los selects, inputs y botones */
-select, input, button {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-#video-section {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 100%;
     max-width: 350px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
-/* Media Query para pantallas más pequeñas (móviles) */
+/* Estilo del texto de las preguntas */
+section label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input y select */
+select, input[type="text"] {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff9a9e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #fa8072;
+    transform: scale(1.05);
+}
+
+/* Sección de video */
+#video-section {
+    text-align: center;
+}
+
+/* Estilo responsivo para móviles */
 @media screen and (max-width: 480px) {
     body {
         padding: 10px;
     }
 
     #welcome-section h1 {
-        font-size: 2.5em; /* Ajuste para que el texto no se vea muy grande */
+        font-size: 2.5em;
     }
 
     button {
         font-size: 16px;
     }
 
-    #password-section, #content-section, #nickname-section {
+    #password-section, #content-section, #nickname-section, #third-section, #four-section, #video-section {
         width: 100%;
-        max-width: 300px; /* Más ajustado para pantallas más pequeñas */
-    }
-
-    select, input, button {
-        padding: 12px;
-        font-size: 14px; /* Texto más pequeño para móviles */
+        max-width: 300px;
     }
 }
